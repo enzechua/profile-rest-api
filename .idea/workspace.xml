@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8885a82-87e7-43bb-9c53-580887569c10" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/profiles_project/profiles_api/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/nginx_profiles_api.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/server_setup.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/supervisor_profiles_api.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles_project/profiles_api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles_project/profiles_api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles_project/profiles_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles_project/profiles_api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles_project/profiles_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles_project/profiles_api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,18 +28,22 @@
           <entry key="action_provision" value="2" />
           <entry key="action_set_name" value="1" />
           <entry key="bashrc" value="2" />
+          <entry key="conf" value="2" />
           <entry key="creator_uid" value="1" />
           <entry key="id" value="1" />
           <entry key="log" value="2" />
           <entry key="private_key" value="1" />
           <entry key="py" value="26" />
+          <entry key="sh" value="1" />
           <entry key="synced_folders" value="2" />
+          <entry key="txt" value="1" />
           <entry key="vagrant_cwd" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="Bash" value="1" />
+          <entry key="PLAIN_TEXT" value="21" />
           <entry key="Python" value="26" />
         </counts>
       </usages-collector>
@@ -47,11 +51,14 @@
         <counts>
           <entry key="bashrc" value="30" />
           <entry key="py" value="5765" />
+          <entry key="sh" value="4" />
+          <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="30" />
+          <entry key="Bash" value="4" />
+          <entry key="PLAIN_TEXT" value="45" />
           <entry key="Python" value="5765" />
         </counts>
       </usages-collector>
@@ -62,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/profiles_project/profiles_api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="391">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -71,15 +78,51 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deploy/nginx_profiles_api.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deploy/supervisor_profiles_api.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deploy/server_setup.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="65" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/profiles_project/profiles_api/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
-                <marker date="1533542603621" expanded="true" signature="107:112" ph="..." />
-                <marker date="1533542603621" expanded="true" signature="327:332" ph="..." />
+                <marker date="1533542605397" expanded="true" signature="107:112" ph="..." />
+                <marker date="1533542605397" expanded="true" signature="323:328" ph="..." />
               </folding>
             </state>
           </provider>
@@ -89,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/src/profiles_project/profiles_api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -131,6 +174,10 @@
         <option value="$PROJECT_DIR$/src/profiles_project/profiles_api/urls.py" />
         <option value="$PROJECT_DIR$/src/profiles_project/profiles_api/views.py" />
         <option value="$PROJECT_DIR$/src/profiles_project/profiles_api/serializers.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/deploy/nginx_profiles_api.conf" />
+        <option value="$PROJECT_DIR$/deploy/supervisor_profiles_api.conf" />
+        <option value="$PROJECT_DIR$/deploy/server_setup.sh" />
       </list>
     </option>
   </component>
@@ -181,35 +228,7 @@
             <path>
               <item name="profiles-rest-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="profiles-rest-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="profiles-rest-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="profiles-rest-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="profiles_project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="profiles-rest-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="profiles-rest-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="profiles_project" type="462c0819:PsiDirectoryNode" />
-              <item name="profiles_api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="profiles-rest-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="profiles-rest-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="profiles_project" type="462c0819:PsiDirectoryNode" />
-              <item name="profiles_api" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="profiles-rest-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="profiles-rest-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="profiles_project" type="462c0819:PsiDirectoryNode" />
-              <item name="profiles_project" type="462c0819:PsiDirectoryNode" />
+              <item name="deploy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -251,7 +270,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2557047" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2543624" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -261,7 +280,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="10" />
@@ -278,9 +297,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -466,19 +482,9 @@
     <entry file="file://$PROJECT_DIR$/src/profiles_project/profiles_api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/profiles_project/profiles_api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -486,12 +492,50 @@
     <entry file="file://$PROJECT_DIR$/src/profiles_project/profiles_api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-            <marker date="1533542603621" expanded="true" signature="107:112" ph="..." />
-            <marker date="1533542603621" expanded="true" signature="327:332" ph="..." />
+            <marker date="1533542605397" expanded="true" signature="107:112" ph="..." />
+            <marker date="1533542605397" expanded="true" signature="323:328" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/profiles_project/profiles_api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/nginx_profiles_api.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/supervisor_profiles_api.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/server_setup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="65" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
         </state>
       </provider>
     </entry>
